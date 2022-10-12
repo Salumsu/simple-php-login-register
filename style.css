@@ -1,0 +1,116 @@
+body {
+  background: rgb(127, 70, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: padding-box;
+}
+
+form {
+  width: clamp(270px, 230px + 30vw, 900px);
+  padding: 20px;
+  background: rgb(76, 28, 189);
+  box-shadow: 2px 2px 4px rgb(17, 1, 54);
+  border-radius: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+input {
+  display: block;
+  border: 1px solid rgb(115, 14, 197);
+  box-shadow: inset 2px 2px 4px rgb(57, 6, 99);
+  font-weight: 900;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: CENTER;
+}
+
+button {
+  background: rgb(63, 6, 116);
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(63, 6, 116);
+}
+
+.error {
+  background: #f2dede;
+  color: #0c0101;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+a {
+  float: right;
+  background: rgb(183, 225, 233);
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.login-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.login-nav a {
+  background-color: black;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.login-nav a.active {
+  background-color: rgba(17, 1, 54, 0.384);
+}
